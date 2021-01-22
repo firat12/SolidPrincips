@@ -1,0 +1,2 @@
+# SolidPrincips
+Solid Prensipleri
