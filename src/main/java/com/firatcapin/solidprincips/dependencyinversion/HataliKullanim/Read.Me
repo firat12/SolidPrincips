@@ -1,0 +1,7 @@
+Oluşturduğum örnekte üst sınıf olan Encryption, alt sınıfları olan XMLReader ve TextReader’dan belirli
+bir formatta dönen veriyi şifrelemektedir. Reader sınıfları birer nesne olarak Encryption
+sınıfının içinde kullanılmakta/bağımlı olarak çalışmaktadır. Alt sınıf olan Reader sınıflarından birini
+uygulama dışında tuttuğumuz anda Encryption sınıfı hata verecektir. Reader sınıflarının ReadAll methodlarında
+yapacağımız bir kod değişikliği Encryption sınıfının işlevselliğini/kurgusunu rahatlıkla bozabilecektir.
+
+Burada, üst sınıfın alt sınıflara olan bağımlılığı nasıl ters çevirebiliriz?

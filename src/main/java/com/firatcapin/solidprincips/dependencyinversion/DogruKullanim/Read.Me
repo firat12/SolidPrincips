@@ -1,0 +1,5 @@
+Yeni oluşturmuş olduğumuz yapıda, Encryption sınıfının XMLReader ve TextReader sınıflarına olan bağımlılığı,
+araya IReader interface’i koyularak ters çevrilmiştir. Alt seviyeli olan Reader sınıfları
+IReader interface’ine bağımlı durumdadır ve içlerinde yapılan değişiklikler Encryption sınıfını
+kesinlikle etkilemeyecektir. IReader interface’ini implemente edecek FileReader gibi bir sınıf,
+Encryption üzerinde hiçbir değişiklik yapılmadan kullanılabileceği bir tasarıma da uygun hale gelmiştir.

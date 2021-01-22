@@ -1,0 +1,13 @@
+2.Open/Closed Principle
+
+Açık kapalı prensibi, yazılım geliştirirken kullandığımız varlıkların (class, method vs.) gelişime açık,
+kodların ise değişime kapalı olması ilkesidir. Örneğin; bir loglama altyapısı oluşturduğunuzu düşünün,
+Veritabanına ve XML’e kayıt tutuyorsunuz. Daha sonradan Eventloglara da log tutma ihtiyacı
+hissettiğinizde, sadece Eventloglara kayıt tutan kodları yazmanız yetecek,
+kodunuzda hiçbir değişiklik yapmadan bu yapı sisteme entegre olacak.
+
+
+Burada LogTo methoduna ILogger interface’inden implemente olmuş bir class veriyoruz.
+Yani; daha sonrasında gene ILogger interface’i üzerinden implemente olmuş
+EventLog isimli bir class yazarsak Logger sınıfı üzerinde hiçbir değişiklik yapmamız gerekmeden,
+sisteme n sayıda log tutan yapı entegre edebileceğiz.

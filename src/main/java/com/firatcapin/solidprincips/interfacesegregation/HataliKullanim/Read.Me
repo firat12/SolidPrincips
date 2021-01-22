@@ -1,0 +1,6 @@
+IArac Interface’inde start(), stop() ve otoPliot() method imzalarının tanımlanmış olduğunuz görüyoruz.
+Ancak burada bir sorun var.
+BMV class’ı bütün methodları implemente edebilirken Tofaş da oto pilot özelliği yok.
+
+Böyle bir durumda Arayüz ayırım prensibinin bize önerdiği çözüm şu: Eğer interface’iniz implemente olacağı
+tüm sınıflarda desteklenemiyorsa Interface’inizi bölün. Bu ilkeye uyarak yapıyı tekrar kuralım:
